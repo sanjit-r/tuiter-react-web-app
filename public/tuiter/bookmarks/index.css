@@ -1,0 +1,109 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+.wd-font-20px {
+    font-size: 20px;
+    position: absolute;
+    left: 16px;
+}
+
+.wd-handle {
+    font-size: 13px;
+    color: lightgray;
+    position: absolute;
+    left: 16px;
+}
+
+.wd-border {
+    height: 1px;
+    color: lightgray;
+}
+
+.wd-padding-16px-12px {
+    padding-top: 16px;
+    padding-right: 12px;
+    float: left;
+}
+
+.wd-pfp {
+    position: absolute;
+    left: 16px;
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-name {
+    padding-left: 76px;
+    font-size: 15px;
+    width: 506px;
+}
+
+.wd-handle-date {
+    font-size: 15px;
+    color: lightgray;
+    width: 506px;
+}
+
+.wd-main-img {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    left: 78px;
+}
+
+.wd-content-title {
+    position: absolute;
+    left: 76px;
+    width: 506px;
+}
+
+.wd-content {
+    position: absolute;
+    left: 76px;
+    width: 506px;
+    color: lightgray;
+}
+
+.wd-style-content {
+    border: lightgray;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 12px;
+}
+
+.wd-icon-1 {
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    left: 76px;
+    color: lightgray;
+}
+
+.wd-icon-2 {
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    left: 231px;
+    color: lightgray;
+}
+
+.wd-icon-3 {
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    left: 386px;
+    color: lightgray;
+}
+
+.wd-icon-4 {
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    left: 542px;
+    color: lightgray;
+}
