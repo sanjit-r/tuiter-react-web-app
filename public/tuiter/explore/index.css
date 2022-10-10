@@ -1,50 +1,23 @@
 body {
-    color: white;
-    background-color: black;
+    font-family: "Arial";
 }
 
-input {
-    color: white;
-    background-color: darkgray;
-    border-radius: 50px;
+.wd-search-tuiter {
+    bottom: 7px;
+    left: 10px;
 }
 
-span {
-    font-size: 13px;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-    position: absolute;
-    right: 16px;
-}
-
-.wd-pos-right-12px {
-    position: absolute;
-    right: 12px;
-}
-
-.wd-highlighted-link {
-    padding: 16px;
-    font-size: 15px;
+.wd-nav-tabs {
+    width: 100%;
     color: rgb(29,161,242);
-    border-bottom: 4px rgb(29, 161, 242);
-    text-decoration: none;
+    padding: 0;
 }
 
-.wd-unhighlighted-link {
-    padding: 16px;
-    font-size: 15px;
-    color: rgb(110, 118, 125);
-    text-decoration: none;
+.wd-nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
 }
 
-.wd-font-gray {
-    color: rgb(110, 118, 125);
-}
-
-.wd-padding-top {
-    padding-top: 50px;
+.wd-nav-tabs .wd-selected {
+    border-bottom: solid 4px rgb(29,161,242);
 }
