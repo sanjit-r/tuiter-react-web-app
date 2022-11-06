@@ -29,7 +29,7 @@ const ExploreComponent = () => {
                 </li>
             </ul>
             <div className="position-relative mb-2">
-                <img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?cs=srgb&dl=pexels-george-desipris-792381.jpg&fm=jpg" className="w-100" alt="image"/>
+                <img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?cs=srgb&dl=pexels-george-desipris-792381.jpg&fm=jpg" className="w-100" alt="explore"/>
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>
