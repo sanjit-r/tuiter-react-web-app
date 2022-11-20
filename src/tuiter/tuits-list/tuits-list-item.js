@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 const TuitItem = (
     {
         tuit = {
@@ -21,33 +21,34 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
-            <div className="col 3">
-                <img className="rounded-circle"
-                     src={`${tuit.image}`}
-                     width="50px" alt="who to follow"/>
-            </div>
-            <div className="col-9">
-                <div className="row">
-                    <i className="bi bi-x-lg float-end"
-                       onClick={() => deleteTuitHandler(tuit._id)}></i>
-                    {tuit.userName} <i className="fa fa-check"></i> {tuit.handle} . {tuit.time}
+            <div className="row">
+                <div className="col-md-2">
+                    <img className="rounded-circle"
+                         src={`${tuit.image}`}
+                         width="50px" alt="who to follow"/>
                 </div>
-                <div className="row">
-                    <p>{tuit.tuit}</p>
-                </div>
-                <div className="row">
-                    <div className="col-4">
-                        <i className="fa fa-comment"></i> {tuit.replies}
+                <div className="col-md-10">
+                    <div>
+                        <i className="bi bi-x-lg float-end"
+                           onClick={() => deleteTuitHandler(tuit._id)}></i>
+                        {tuit.userName} <i className="fa fa-check"></i> {tuit.handle} . {tuit.time}
                     </div>
-                    <div className="col 4">
-                        <i className="fa fa-retweet"></i> {tuit.retuits}
+                    <div className="row">
+                        <p>{tuit.tuit}</p>
                     </div>
-                    <div className="col 4">
-                        <i className="fa fa-heart"></i> {tuit.likes}
+                    <div className="row">
+                        <div>
+                            Likes: {tuit.likes}
+                            <i onClick={() => dispatch(updateTuitThunk({
+                                                                           ...tuit,
+                                                                           likes: tuit.likes + 1
+                                                                       }))}
+                               className="bi bi-heart-fill me-2 text-danger"></i>
+                        </div>
                     </div>
                 </div>
             </div>
