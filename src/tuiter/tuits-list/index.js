@@ -9,6 +9,7 @@ const TuitsList = () => {
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
     const dispatch = useDispatch();
+    // eslint-disable-next-line
     useEffect(() => {
         dispatch(findTuitsThunk())
     }, [])
