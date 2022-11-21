@@ -10,9 +10,7 @@ const TuitsList = () => {
         state => state.tuitsData)
     const dispatch = useDispatch();
     // eslint-disable-next-line
-    useEffect(() => {
-        dispatch(findTuitsThunk())
-    }, [])
+    useEffect(() => {dispatch(findTuitsThunk())}, [])
 
     return(
         <ul className="list-group">
